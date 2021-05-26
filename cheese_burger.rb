@@ -7,7 +7,7 @@ class CheeseBurger
 
   attr_accessor :state, :options, :inventory
 
-  def initialize(burger_factory, options: {})
+  def initialize(burger_factory, options = {})
     @options = options
     @state = INITIAL_STATE
     @inventory = burger_factory.inventory

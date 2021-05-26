@@ -6,7 +6,7 @@ class Inventory
 
   attr_accessor :options, :buns, :patties
 
-  def initialize(options: {})
+  def initialize(options = {})
     @options = options
     set_initial_count
   end

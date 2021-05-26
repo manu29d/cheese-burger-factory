@@ -4,12 +4,12 @@ require_relative './inventory'
 class BurgerFactory
   attr_accessor :inventory, :order_count
 
-  def initialize(options: {})
+  def initialize(options = {})
     @inventory = Inventory.new(options)
     @order_count = 0
   end
   
-  def order(patty)
+  def order(patty = nil)
     raise 'Cannot take order' if inventory_empty?
     burger = CheeseBurger.new(self, { patty: patty })
     @order_count += 1
