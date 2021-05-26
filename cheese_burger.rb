@@ -20,9 +20,9 @@ class CheeseBurger
       @state = 'gathered_ingredients'
     rescue
       @state = FAILED_STATE
+      raise 'Failed to make burger'
     end
-    tower_burger if @state == 'gathered_ingredients'
-    raise 'Failed to make burger' if @state == FAILED_STATE
+    tower_burger
   end
 
   def serve!
