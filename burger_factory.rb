@@ -23,7 +23,7 @@ class BurgerFactory
   private
 
   def process_order(burger)
-    buger.make!
+    burger.make!
     burger.serve!
   end
 end
