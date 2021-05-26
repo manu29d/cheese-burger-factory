@@ -26,7 +26,7 @@ class CheeseBurger
   end
 
   def serve!
-    @state = 'served' if @state == 'burger_built'
+    @state = 'served' if state == 'burger_built'
     self
   end
 
@@ -34,7 +34,7 @@ class CheeseBurger
 
   def gather_buns
     @state = 'gathering_buns'
-    @inventory.supply_buns
+    inventory.supply_buns
   end
 
   def gather_patty
