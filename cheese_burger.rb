@@ -40,7 +40,8 @@ class CheeseBurger
 
   def gather_patty
     @state = 'gathering_patty'
-    @inventory.supply_patty(@options[:patty] || PattyTypes::DEFAULT)
+    @options[:patty] = @options[:patty] || PattyTypes::DEFAULT
+    inventory.supply_patty(@options[:patty])
   end
 
   def tower_burger
