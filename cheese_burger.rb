@@ -14,7 +14,6 @@ class CheeseBurger
   end
 
   def make!
-    @state = 'gathering_ingredients'
     begin
       gather_buns
       gather_patty
