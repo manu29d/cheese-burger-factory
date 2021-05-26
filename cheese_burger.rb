@@ -44,6 +44,6 @@ class CheeseBurger
   end
 
   def tower_burger
-    @state = 'burger_built'
+    @state = 'burger_built' if state == 'gathered_ingredients'
   end
 end
