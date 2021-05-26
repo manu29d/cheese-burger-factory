@@ -1,3 +1,5 @@
+require_relative './patty_types'
+
 class CheeseBurger
 
   INITIAL_STATE = 'new_burger'.freeze

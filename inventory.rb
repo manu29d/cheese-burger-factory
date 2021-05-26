@@ -1,4 +1,4 @@
-require 'patty_types'
+require_relative './patty_types'
 
 class Inventory
   INITIAL_COUNT = 20.freeze

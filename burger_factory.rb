@@ -1,5 +1,5 @@
-require 'cheese_burger'
-require 'inventory'
+require_relative './cheese_burger'
+require_relative './inventory'
 
 class BurgerFactory
   attr_accessor :inventory, :order_count
