@@ -10,7 +10,7 @@ class BurgerFactory
   end
   
   def order(patty = nil)
-    raise 'Cannot take order' if inventory_empty?
+    raise 'Cannot take order' if inventory.is_empty?
     burger = CheeseBurger.new(self, { patty: patty })
     @order_count += 1
     process_order(burger)

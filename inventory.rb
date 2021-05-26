@@ -32,7 +32,7 @@ class Inventory
     set_initial_count
   end
 
-  def inventory_empty?
+  def is_empty?
     total_inventory = buns + patties.values.sum
     total_inventory == 0
   end
