@@ -20,9 +20,9 @@ class Inventory
   end
 
   def supply_patty(patty_type)
-    patty = patties[:patty_type.to_sym]
+    patty = patties[patty_type.to_sym]
     if patty > 0
-      @patty = patty - 1
+      @patties[patty_type.to_sym] -= 1
     else
       raise 'This patty is not available'
     end
