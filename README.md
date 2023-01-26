@@ -5,5 +5,5 @@
 ## Running tests
 
 ```bash
-$ ruby -I lib -e 'ARGV.each { |f| load f }' test/*_(test|spec).rb
+$ ruby -I lib -e 'ARGV.each { |f| load f }' ./test/+(*_test.rb|*_spec.rb)
 ```
